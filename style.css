@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 58px;
+    padding-bottom: 20px;
+}
+
+header .logo img{
+    height: 25px;
+}
+
+header .logo{
+    padding-bottom: 5px;
+}
+
+.header-subtitle{
+    font-family: Linux Libertine,Georgia,Times,serif;
+    font-size: 15px;
+}
+
+.languages{
+    /*background-color: aqua;*/
+    height: 352px; /*320*/
+    width: 561px; /*510*/
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(11, 1fr) ;
+    grid-template-areas: 
+    ". . eng eng eng eng eng . . . . esp esp esp esp esp . ."
+    ". . eng eng eng eng eng . . . . esp esp esp esp esp . ."
+    ". por por por por wor wor wor wor wor wor wor wor jap jap jap jap ."
+    ". por por por por wor wor wor wor wor wor wor wor jap jap jap jap ."
+    "pyc pyc pyc pyc pyc wor wor wor wor wor wor wor wor fra fra fra fra fra"
+    "pyc pyc pyc pyc pyc wor wor wor wor wor wor wor wor fra fra fra fra fra"
+    ". deu deu deu deu wor wor wor wor wor wor wor wor ita ita ita ita ."
+    ". deu deu deu deu wor wor wor wor wor wor wor wor ita ita ita ita ."
+    ". . chi chi chi chi chi . . . . man man man man man . ."
+    ". . chi chi chi chi chi . . . . man man man man man . ."
+    ;
+    justify-items: center;
+    align-items: center;
+}
+
+.languages .eng{
+    grid-area: eng;
+    display: flex;
+}
+.languages .por{
+    grid-area: por;
+    display: flex;
+}
+.languages .pyc{
+    grid-area: pyc;
+    display: flex;
+}
+.languages .deu{
+    grid-area: deu;
+    display: flex;
+}
+.languages .chi{
+    grid-area: chi;
+    display: flex;
+}
+.languages .man{
+    grid-area: man;
+    display: flex;
+}
+.languages .ita{
+    grid-area: ita;
+    display: flex;
+}
+.languages .fra{
+    grid-area: fra;
+    display: flex;
+}
+.languages .jap{
+    grid-area: jap;
+    display: flex;
+}
+.languages .esp{
+    grid-area: esp;
+    display: flex;
+}
+
+.languages div{
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+
+.languages a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: RGB(51, 102, 204);
+}
+
+.languages a:hover{
+    text-decoration: underline;
+}
+
+.languages p{
+    font-size: 13px;
+    color: RGB(84, 89, 93);
+}
+
+.world{
+    grid-area: wor;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.world img{
+    width: 80%;
+}
+
+.main-container .languages div:hover{
+    background-color: #EAECF0;
+}
+
+.search-bar{
+    border: 1px solid RGB(162, 169, 177);/*BORDEEEEEEEEEE*/
+    display: flex;
+    width: 450px;
+    height: 42px;
+    margin: 0 auto;
+}
+
+.search-bar:hover{
+    border: 1px solid rgb(141, 139, 139);
+}
+
+.search-bar:focus-within{
+    border: 2px solid RGB(51, 102, 204);
+}
+
+#search-icon{
+    background-color: RGB(51, 102, 204);
+    width: 56px;
+    display: flex;
+    text-decoration: none;
+    place-items: center;
+    justify-content: center;
+    /*border: 10px solid RGB(51, 102, 204);*/
+}
+
+#search-white{
+    color: white;
+    font-size: 25px;
+}
+
+.search-bar input{
+    width: 390px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+.search-bar select{
+    outline: none;
+    border: none;
+    font-size: 12px;
+    color: RGB(84, 89, 93);
+    margin-right: 10px;
+}
+
+.main-container .read-language{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.lateral-line{
+    text-decoration:line-through;
+    font-size: 10px;
+    padding: 0 20px;
+    color: RGB(200, 204, 209);
+}
+
+.main-container .read-language select{
+    height: 34px;
+    width: 299px;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color:RGB(51, 102, 206);
+    border: 1px solid #A2A9B1;
+    border-radius: 3px;
+    background-color: RGB(248, 249, 250);
+    cursor: pointer;
+    outline: none;
+}
+
+.main-container .read-language select:hover{
+    background-color: white;
+}
+
+.divisor {
+    padding-top: 33px;
+}
+
+
+.footer-apps{
+    display: flex;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+
+.hosted-apps{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    background-color: white;
+    padding-top: 46px;
+    padding-left: 78px;
+    padding-right: 70px;
+}
+
+.hosted-apps .hosted{
+    display: flex;
+    padding-bottom: 20px;
+    color: RGB(84, 89, 93);
+}
+
+.hosted-apps .hosted a{
+text-decoration: none;
+color:RGB(84, 125, 189) ;
+}
+
+.hosted-apps .hosted a:hover{
+text-decoration: underline;
+}
+    
+#icono1{
+    width: 100px;
+    min-width: 50px;
+}
+
+#icono2{
+    width: 100px;
+    min-width: 50px;
+}
+
+.google-apple{
+    display: flex;
+    padding-top: 10px;
+    color: RGB(84, 89, 93);
+    background-color: RGB(248, 249, 250);
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.google-apple svg{
+    width: 100%;
+    min-width: 50px;
+
+    cursor: pointer;
+}
+
+.google-apple a{
+text-decoration: none;
+color:RGB(84, 125, 189) ;
+font-weight: 700;
+}
+
+.google-apple a:hover{
+    text-decoration: underline;
+    }
+
+#download-text{
+    display: flex;
+    flex-direction: column;
+}
+/*
+.google-apple #apple-icon{
+    width: 100px;
+}
+
+.google-apple #google-icon{
+    width: 100px;
+}
+*/
+#apps-list{
+    display: flex;
+    justify-content: center;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+}
+
+.items:hover{
+    background-color: #EAECF0;
+}
+
+.items svg{
+    width: 50px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.text a{
+    text-decoration: none;
+    color:RGB(84, 125, 189);
+}
+
+.text p{
+    color: RGB(84, 89, 93)
+}
+
+.other-apps{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 50px;
+    width: 100%;
+    column-gap: 50px;
+    row-gap: 40px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 5px;
+    border-top: 1px solid RGB(200, 204, 209);
+    color: RGB(94, 99, 102);
+}
+
+.footer a{
+    text-decoration: none;
+    color: RGB(84, 125, 189);
+}
+
+.footer a:hover{
+    text-decoration:underline;
+}
+
+.footer li::marker{
+    font-size: 8px;
+}
+
+
+@media(max-width: 870px){
+    .footer-apps{
+        display: flex;
+        flex-direction: column;
+    }
+    .hosted-apps{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
+    .other-apps{
+        gap: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media(max-width: 700px){
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-items: center;
+        text-align: center;
+    }
+    .other-apps{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+        gap: 30px;
+        justify-content: center;
+
+    }
+
+}
+
+@media(max-width: 580px){
+    .available-languages .languages .world{
+        display: none;
+    }
+
+    .languages{
+        display: grid;
+        width: 90vw;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "eng por pyc"
+        "deu chi man"
+        "ita fra jap"
+        "esp . .";
+        column-gap: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .languages p{
+        text-align: center;
+    }
+
+        .languages .eng{
+            grid-area: eng;
+            display: flex;
+        }
+        .languages .por{
+            grid-area: por;
+            display: flex;
+        }
+        .languages .pyc{
+            grid-area: pyc;
+            display: flex;
+        }
+        .languages .deu{
+            grid-area: deu;
+            display: flex;
+        }
+        .languages .chi{
+            grid-area: chi;
+            display: flex;
+        }
+        .languages .man{
+            grid-area: man;
+            display: flex;
+        }
+        .languages .ita{
+            grid-area: ita;
+            display: flex;
+        }
+        .languages .fra{
+            grid-area: fra;
+            display: flex;
+        }
+        .languages .jap{
+            grid-area: jap;
+            display: flex;
+        }
+        .languages .esp{
+            grid-area: esp;
+            display: flex;
+        }
+
+        .read-language .lateral-line{
+            display: none;
+        }
+
+        .search-bar{
+            width: 90vw;
+        }
+
+    .hosted-apps{
+        flex-wrap: wrap;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .hosted-apps .hosted{
+        order: 2;
+    }
+    .hosted-apps .google-apple{
+        order: 1;
+    }
+
+    .other-apps{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-content: center;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
