@@ -136,7 +136,7 @@ header .logo{
 }
 
 .search-bar input+select{
-    background-color: none;
+    background-color: white;
 }
 
 .search-bar:hover{
@@ -206,6 +206,9 @@ header .logo{
     background-color: RGB(248, 249, 250);
     cursor: pointer;
     outline: none;
+    text-align: center;
+    align-self: center;
+    align-content: center;
 }
 
 .main-container .read-language select:hover{
