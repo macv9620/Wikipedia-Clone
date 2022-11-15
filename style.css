@@ -206,9 +206,16 @@ header .logo{
     background-color: RGB(248, 249, 250);
     cursor: pointer;
     outline: none;
-    text-align: center;
     align-self: center;
     align-content: center;
+    justify-content: center;
+}
+
+.main-container .read-language select option{
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
 }
 
 .main-container .read-language select:hover{
